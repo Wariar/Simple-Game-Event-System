@@ -10,7 +10,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "GameEvent/Event")]
 public class GameEvent : ScriptableObject {
 
-    delegate void AddEvent(params object[] args);
+    delegate void AddEvent();
     AddEvent OnEvent;
 
     public void AddListner(GameListenerBase receiver) => OnEvent += receiver.ReceiveEvent;
@@ -19,6 +19,6 @@ public class GameEvent : ScriptableObject {
     public void RemoveListner(GameListenerBase receiver) => OnEvent -= receiver.ReceiveEvent;
 
 
-    public void Invoke(params object[] args) => OnEvent?.Invoke(args);
+    public void Invoke() => OnEvent?.Invoke();
     
 }

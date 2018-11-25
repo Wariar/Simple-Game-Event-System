@@ -14,5 +14,5 @@ public abstract class GameListenerBase : MonoBehaviour
 
     protected void OnEnable() => gameEvent.AddListner(this);
     protected void OnDestory() => gameEvent.RemoveListner(this);
-    public abstract void ReceiveEvent(params object[] args);
+    public abstract void ReceiveEvent();
 }
