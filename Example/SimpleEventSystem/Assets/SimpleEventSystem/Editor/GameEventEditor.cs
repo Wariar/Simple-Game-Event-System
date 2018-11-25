@@ -1,7 +1,8 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEditor;
-
+/// <summary>
+/// Custom editor for Game Event script
+/// </summary>
 [CustomEditor(typeof(GameEvent))]
 public class GameEventEditor : Editor {
 
@@ -17,6 +18,7 @@ public class GameEventEditor : Editor {
         
         GUI.enabled = Application.isPlaying;
 
+        // Helps in broadcasting event when application is playing. This is useful in Unit testing.
         if(GUILayout.Button("Broadcast"))
         {
             _ge?.Invoke();
