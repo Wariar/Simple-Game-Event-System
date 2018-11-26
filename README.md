@@ -27,4 +27,4 @@ Listeners inherited from GameListenerBase will subscribe to the event specified.
 ![enter image description here](https://lh3.googleusercontent.com/Ew15Xqds_ibzj7yFZ1b3x205_lGgBbJSEikgYyepab7x-i8SLJJHx3mYDphtR-X2kZ6pHIcXxtDtbw)
 
 # License
-This project is licensed under [MIT License](https://mit-license.org).
+This project is licensed under [MIT License](https://github.com/Wariar/SimpleGameEventSystem/blob/master/LICENSE).
